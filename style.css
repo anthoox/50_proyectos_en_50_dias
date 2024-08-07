@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    background-color: #000211;
+    color: #f9f4f4;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0 2rem;
+    
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #b9b6b6;
+}
+
+h1,
+h3,
+h4 {
+    margin-bottom: 0;
+}
+
+
+.separador {
+    height: 3px;
+    width: 75%;
+    background: linear-gradient(.15turn, #00FFFF, #1c1c1c);
+    margin: 0 0;
+    margin-top: 1rem;
+}
+
+.separador-2 {
+    height: 3px;
+    width: 50%;
+    background: linear-gradient(.15turn, #00FFFF, #1c1c1c);
+    margin-top: .5rem;
+    padding: 0;
+}
+
+.separador-3 {
+    height: 3px;
+    width: 25%;
+    background: linear-gradient(.15turn, #00FFFF, #1c1c1c);
+    margin-top: .5rem;
+    padding: 0;
+}
+
+
+.proyectos {
+    height: 75%;
+    overflow-y: auto;
+    padding: 1px 5px;
+    width: 90%;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+table {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+    max-width: 700px;
+}
+
+thead {
+    background-color: #23232c;
+    position: sticky;
+    top: 0;
+}
+
+thead>tr {
+    border-radius: 5px 5px 0px 0px;
+    font-weight: bold;
+    color: #f9f4f4;
+    padding: 15px;
+
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #23232c;
+    margin-top: 5px;
+    color: #E5E1E1;
+    padding: 15px;
+}
+td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primero {
+    width: 50px;
+}
+
+a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+
+.cnt-scroll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+}
+
+.cnt-scroll-texto {
+    width: 100%;
+    font-size: .85rem;
+    color: #00FFFF;
+    text-align: center;
+    border-radius: .25rem;
+    margin: 0 0 10px 0;
+    z-index: 1;
+    animation: opacidad .75s ease;
+    text-shadow: 0px 0px 4px #00FFFF;
+}
+
+.cnt-scroll-icono {
+    width: 25px;
+    filter: drop-shadow(0px 0px 1px #00FFFF);
+}
