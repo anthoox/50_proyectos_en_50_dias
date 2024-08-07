@@ -1,0 +1,85 @@
+html{
+    font-family:'Nunito', sans-serif;
+}
+
+body{
+    display: grid;
+    align-items: center;
+}
+h1,h2{
+    font-family:'Quicksand', 'Trebuchet MS', sans-serif ;
+}
+
+h1{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.contenedor{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+.tarjeta {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.tarjeta h2{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 3rem;
+    opacity: 0;
+}
+
+.contenedor .tarjeta:nth-child(1) {
+    background-image: url('/01_tarjetas/img/pexels-justin-wearne-83497620-8850440.jpg');
+}
+
+.contenedor .tarjeta:nth-child(2) {
+    background-image: url('/01_tarjetas/img/pexels-kowalievska-1416792\ \(1\).jpg');
+}
+
+.contenedor .tarjeta:nth-child(3) {
+    background-image: url('/01_tarjetas/img/pexels-sahinsezerdincer-3959230.jpg');
+}
+
+.contenedor .tarjeta:nth-child(4) {
+    background-image: url('/01_tarjetas/img/pexels-tamba09-979247.jpg');
+}
+
+.contenedor .tarjeta:nth-child(5) {
+    background-image: url('/01_tarjetas/img/pexels-triplemdesignz-1693441.jpg');
+}
+
+.tarjeta.active {
+    flex: 5;
+}
+
+.tarjeta.active h2 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .tarjeta:nth-of-type(4),
+    .tarjeta:nth-of-type(5) {
+        display: none
+    }
+}
