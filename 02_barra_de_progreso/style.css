@@ -1,0 +1,111 @@
+:root {
+    --completo: #00FFFF;
+    --vacio: #92abc7;
+    --blanco: #ffffff;
+    --fondo: #1c1c1c;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo);
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contenedor::before {
+    content: '';
+    background-color: var(--vacio);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.barra_progreso{
+    background-color: var(--completo);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.celda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    background-color: var(--fondo);
+    border-radius: 100%;
+    border: 3px solid var(--vacio);
+    width: 30px;
+    height: 30px;
+    transition: .5s ease;
+}
+
+.celda.activo {
+    border: 3px solid var(--completo);
+}
+
+
+.contenedor_botones{
+    display: flex;
+    gap: 2rem;
+}
+.botones {
+    text-align: center;
+    background-color: var(--vacio);
+    border: none;
+    color: var(--blanco);
+    border-radius: .25rem;
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    transition: 0.4 ease;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Nunito', Courier, monospace;
+    background-color: var(--completo);
+        color: var(--fondo);
+    
+}
+
+   
+.botones:active {
+    transform: scale(0.9);
+}
+
+.botones:focus {
+    outline: 0;
+}
+
+.botones:disabled {
+    background-color: var(--vacio);
+    cursor: not-allowed;
+    color: var(--blanco);
+}
