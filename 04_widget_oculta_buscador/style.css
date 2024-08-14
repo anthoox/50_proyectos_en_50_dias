@@ -1,0 +1,82 @@
+:root {
+    --color-4: #00FFFF;
+    --color-3: #D67BFF;
+    --color-2: #FFB6D9;
+    --color-1: #45FFCA;
+    --color-0: #FEFFAC;
+}
+
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--color-0);
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow-X: hidden;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.buscador{
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    transition: width .3s ease;
+}
+.buscador input{
+    width: 0px;
+    height: 40px;
+    background-color: var(--color-3);
+    border: none;
+    color: var(--color-0);
+    font-size: 18px;
+    transition: width .3s ease;
+}
+.buscador input:focus{
+    border-radius: 10px;
+    outline: none;
+}
+.buscador input:focus-visible {
+    outline-offset: 0px;
+}
+.buscador input::placeholder {
+    color: var(--color-0);
+    font-size: 18px;
+}
+
+.buscador button{
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+    color: var(--color-0);
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    transition: transform .3s ease;
+}
+
+
+.agrandar {
+    width: 250px !important;
+}
+.desplazar {
+    transform: translateX(210px);
+}
