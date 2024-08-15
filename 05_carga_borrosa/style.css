@@ -1,0 +1,43 @@
+:root {
+    --color-3: #7743db;
+    --color-2: #c3acd0;
+    --color-1: #1f1f1f90;
+    --color-0: #fffbf5;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor {
+    background-image: url("/05_carga_borrosa/img/fondo.jpg");
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    filter: blur(25px);
+    transition: filter 3s ease;
+}
+.contador {
+    text-align: center;
+    font-size: 50px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    color: var(--color-1);
+    transition: opacity 3s ease;
+}
+.opacidad{
+    opacity: 0;
+}
