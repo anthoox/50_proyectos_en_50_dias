@@ -1,0 +1,55 @@
+:root {
+    --color-5: #000000;
+    --color-3: #B1B2FF;
+    --color-2: #AAC4FF;
+    --color-1: #D2DAFF;
+    --color-0: #EEF1FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--color-2);
+    overflow-x: hidden;
+}
+
+.main{
+    text-align: center;
+    background-color: var(--color-1);
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+}
+.contenedor{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    background-color: var(--color-2);
+    border-radius:16px;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateX(400%);
+    transition: transform .4s ease;
+}
+.volver{
+    transform: translateX(0%);
+}
