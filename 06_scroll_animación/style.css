@@ -17,19 +17,18 @@ html{
 
 body {
     font-family: "Nunito", sans-serif;
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     overflow-x: hidden;
 }
 
 .main{
     text-align: center;
-    background-color: var(--color-1);
     height: 100%;
     width: 100%;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .contenedor{
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -41,15 +40,21 @@ body {
     align-items: center;
     width: 400px;
     height: 200px;
-    background-color: var(--color-2);
+    background-color: var(--color-3);
     border-radius:16px;
     font-size: 32px;
     font-weight: 800;
     color: var(--color-0);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: translateX(400%);
     transition: transform .4s ease;
 }
+.caja:nth-child(odd) {
+    transform: translateX(400%);
+}
+
+.caja:nth-child(even) {
+    transform: translateX(-400%);
+}
 .volver{
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
 }
