@@ -3,6 +3,9 @@ const perro = document.getElementById('perros');
 gato.addEventListener('mouseover', ()=>{
     agrandarEncoger(gato, perro)    
 })
+gato.addEventListener('mouseleave', () => {
+    normalizar(gato, perro)
+})
 
 perro.addEventListener('mouseover', () => {
     agrandarEncoger(perro, gato)
@@ -11,9 +14,7 @@ perro.addEventListener('mouseover', () => {
 perro.addEventListener('mouseleave', () => {
     normalizar(perro, gato)
 })
-gato.addEventListener('mouseleave', () => {
-    normalizar(gato, perro)
-})
+
 
 
 function agrandarEncoger(elemento1, elemento2){
