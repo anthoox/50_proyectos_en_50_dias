@@ -5,10 +5,11 @@
     --fondo: #1c1c1c;
 }
 
-html {
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--fondo);
     overflow: hidden;
