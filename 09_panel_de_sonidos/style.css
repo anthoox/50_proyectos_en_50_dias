@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Orbitron:wght@400..900&display=swap');
+:root {
+    --color1: #FBF6E2;
+    --color2: #ECCEAE;
+    --color3: #E68369;
+    --color4: #131842;
+    --color5: #FBF6E290;
+    --color6: #E6836990;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bungee Inline", sans-serif;;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel{
+    width: 500px;
+    padding:30px;
+    background-color: var(--color2);
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+header h1{
+    color: var(--color3);
+    text-shadow: 1px 2px 3px var(--color4),-1px -2px 3px var(--color4);
+}
+header button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+header button:active {
+    transform: scale(0.95);
+}
+header i {
+    color: var(--color3);
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sonidos {
+    background-color: var(--color5);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sonidos .sonido{
+    flex-basis: 130px;
+    background-color: var(--color6);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--color4);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 100ms ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.sonidos .sonido:hover {
+    flex-basis: 130px;
+    background-color: var(--color3);
+}
+
+.sonidos .sonido:active {
+    transform: scale(0.95);
+}
