@@ -54,7 +54,11 @@ main .cnt_texto {
     border: 1px solid var(--color-4);
 }
 
+<<<<<<< HEAD
 @media (width >= 780px) {
+=======
+@media (width > 720px) {
+>>>>>>> decb63f (Proyecto 10, tecla, código, evento - Configuración estilos)
     main {
         flex-direction: row;
     }
