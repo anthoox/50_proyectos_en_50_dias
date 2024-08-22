@@ -54,7 +54,7 @@ main .cnt_texto {
     border: 1px solid var(--color-4);
 }
 
-@media (width > 720px) {
+@media (width >= 780px) {
     main {
         flex-direction: row;
     }
