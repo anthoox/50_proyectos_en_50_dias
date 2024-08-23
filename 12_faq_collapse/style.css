@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-1: #2E073F;
+    --color-2: #7A1CAC;
+    --color-3: #AD49E1;
+    --color-4: #EBD3F8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    background-color: var(--color-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.cnt_faq {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-3);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+}
+.cnt_faq .pregunta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-1);
+}
+.cnt_faq h2{
+    font-size: 20px;
+}
+.cnt_faq p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.cnt_faq button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform .25s ease-in-out;
+}
+.cnt_faq button:active {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(0.85);
+}
+.cnt_faq i {
+    color: var(--color-1);
+    font-size: 25px;
+}
+.cnt_faq .respuesta {
+    display: none;
+}
+.cnt_faq .abrir{
+    display: block;
+}
+.cnt_faq .cerrar{
+    display: none;
+}
+
+
+.active {
+    background-color: var(--color-4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .1);
+}
+.active .respuesta{
+    display: block;
+}
+.active .abrir{
+    display: none;
+}
+.active .cerrar{
+    display: block;
+}
+.active::before,
+.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 free';
+    color: var();
+    font-size: 100px;
+    position: absolute;
+    opacity: .2;
+    top: 20px;
+    left: 50px;
+    z-index: 0;
+}
+.active::before {
+    color: var(--color-3);
+    top: -10px;
+    left: -10px;
+    transform: rotateY(180deg);
+}
