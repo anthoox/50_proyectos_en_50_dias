@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --color-1: #000;
+    --color-2: #FFFFFF;
+    --color-3: #604CC3;
+    --color-4: #FF7F3E;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-3)
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor .parrafo {
+    text-align: center;
+    color: var(--color-2);
+    margin: 20px;
+}
+.contenedor textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    color: var(--color-1);
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+.contenedor textarea:focus {
+    border: none;
+    outline: none;
+}
+.contenedor .palabras {
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.contenedor span{
+    padding: 10px 20px;
+    background-color: var(--color-4);
+    color: var(--color-2);
+    border-radius: 30px;
+}
+
+.contenedor .seleccionado {
+    background-color: var(--color-1) ;
+}
