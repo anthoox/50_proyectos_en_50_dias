@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+    --color1: #212121;
+    --color2: #323232;
+    --color3: #0d7377;
+    --color4: #14ffec;
+    --color5: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Noto Sans", sans-serif;
+}
+body {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    background-color: var(--color3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+main {
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pelicula {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.pelicula img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+.pelicula .informacion {
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.informacion h3 {
+    color: var(--color1);
+}
+.informacion span {
+    font-size: 10px;
+    color: var(--color5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color2);
+}
+.pelicula .descripcion {
+    position: absolute;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: var(--color5);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(120%);
+    font-size: 1rem;
+    transition: all 300ms ease-in;
+}
+.pelicula:hover  .descripcion {
+    transform: translateY(0);
+}
+.pelicula .descripcion h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.rojo{
+    color: #ff0000 !important;
+}
+.naranja{
+    color: #ff9100 !important;
+}
+.green{
+    color: #00FF00 !important;
+}
