@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
     --color1: #212121;
     --color2: #323232;
@@ -12,9 +13,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: "Noto Sans", sans-serif;
 }
+
 body {
     background-color: var(--color1);
     display: flex;
@@ -26,15 +29,17 @@ body {
 header {
     width: 100%;
     background-color: var(--color3);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 header input {
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 40px;
+    padding: 10px 15px;
     border: none;
+    font-size: 1rem;
 }
 
 input:focus {
@@ -44,15 +49,15 @@ input:focus {
 
 main {
     width: calc(100% - 80px);
-    padding: 20px 40px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .pelicula {
     width: 300px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,55 +66,67 @@ main {
     border-radius: 3px;
     overflow: hidden;
 }
+
 .pelicula img {
     width: 100%;
     height: 100%;
     border-radius: 0;
 }
+
 .pelicula .informacion {
     background-color: var(--color4);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 30px 10px;
     width: 100%;
+    height: 100px;
     overflow: hidden;
 }
+
 .informacion h3 {
+    font-size: 1.2rem;
     color: var(--color1);
 }
+
 .informacion span {
-    font-size: 10px;
+    font-size: .9rem;
     color: var(--color5);
     padding: 5px 10px;
     border-radius: 5px;
     background-color: var(--color2);
 }
+
 .pelicula .descripcion {
     position: absolute;
-    padding: 40px 20px;
+    padding: 50px 30px;
     width: 100%;
     background-color: var(--color5);
     left: 0;
     bottom: 0;
     right: 0;
     transform: translateY(120%);
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 300ms ease-in;
 }
-.pelicula:hover  .descripcion {
+
+.pelicula:hover .descripcion {
     transform: translateY(0);
 }
-.pelicula .descripcion h3{
-    font-size: 1.2rem;
+
+.pelicula .descripcion h3 {
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
-.rojo{
+
+.rojo {
     color: #ff0000 !important;
 }
-.naranja{
+
+.naranja {
     color: #ff9100 !important;
 }
-.green{
+
+.green {
     color: #00FF00 !important;
 }
