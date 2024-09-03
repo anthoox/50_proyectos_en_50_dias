@@ -26,7 +26,7 @@ btnCerrar.addEventListener('click', ()=>{
     })
 })
 function animacionNav(elementos){
-    elementos[0].style.transform = "translateX(-10%)";
-    elementos[1].style.transform = "translateX(-5%)";
-    elementos[2].style.transform = "translateX(0%)";
+    elementos[0].style.transform = "translateX(10%)";
+    elementos[1].style.transform = "translateX(20%)";
+    elementos[2].style.transform = "translateX(30%)";
 }
